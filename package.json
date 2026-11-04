@@ -1,0 +1,41 @@
+{
+  "bin": {
+    "failshare": "dist/cli.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1",
+    "zod": "^4"
+  },
+  "description": "Shared failure knowledge for agents: check what the network knows about a tool failure before retrying, report failures and successes, and report whether a recovery action worked, forwarded to the hosted FailEcho MCP server. One bin serves a small CLI and a stdio MCP server.",
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "server.json"
+  ],
+  "homepage": "https://github.com/CloudCorpRecords/failshare#readme",
+  "license": "MIT",
+  "mcpName": "io.github.CloudCorpRecords/failshare",
+  "name": "@reneturcios/failshare",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudCorpRecords/failshare.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}
